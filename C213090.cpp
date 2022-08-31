@@ -201,7 +201,7 @@ int main(){
     {
         if(f==t[i].name){
             t[i].get();
-            break;
+            //break;
         }
         else
         cout<<nl<<"Not Found."<<nl;
@@ -217,7 +217,7 @@ int main(){
     {
         if(f==t[i].department){
             t[i].get();
-            break;
+            //break;
         }
         else
         cout<<nl<<"Not Found."<<nl;
@@ -235,7 +235,7 @@ int main(){
     {
         if(f==s[i].teacher_name){
             s[i].get1_data();
-            break;
+            //break;
         }
         else
         cout<<nl<<"Not Found."<<nl;
