@@ -22,7 +22,7 @@ using namespace std;
         string name,department,deg,id;
         void set()
         {
-                cout<<"Enter Teacher Name : ";
+                cout<<nl<<"Enter Teacher Name : ";
                 cin>>name;
                 cout<<nl<<"Enter Teacher Department : ";
                 cin>>department;
@@ -127,7 +127,7 @@ void menu()
 int main(){
     cout<<"Enter The Total Capacity of IIUC Teacher : ";
     cin>>n;
-    cout<<"Enter The Total Capacity of IIUC Student : ";
+    cout<<nl<<"Enter The Total Capacity of IIUC Student : ";
     cin>>m;
   menu();
     teacher t[n];
@@ -139,7 +139,7 @@ int main(){
 
   if(q==1) {
     int ne;
-    cout<<"How Many Teacher Do You Want To Register : ";
+    cout<<nl<<"How Many Teacher Do You Want To Register : ";
     cin>>ne;
     Teacher+=ne;
     rep(i,0,ne)
@@ -148,7 +148,7 @@ int main(){
 
   else if (q==2){
     int ne;
-    cout<<"How Many Student Do You Want To Register : ";
+    cout<<nl<<"How Many Student Do You Want To Register : ";
     cin>>ne;
     Student+=ne;
     rep(i,0,ne)
@@ -165,7 +165,7 @@ int main(){
     }
  else if (q==5) {
     string f;
-    cout<<"Enter Teacher ID : ";
+    cout<<nl<<"Enter Teacher ID : ";
     cin>>f;
     rep(i,0,n)
     {
@@ -173,12 +173,14 @@ int main(){
             t[i].get();
             break;
         }
+        else
+        cout<<nl<<"Not Found."<<nl;
     }
-    cout<<"Not Found."<<nl;
+    
     }
     else if (q==6) {
     int f;
-    cout<<"Enter Student ID : ";
+    cout<<nl<<"Enter Student ID : ";
     cin>>f;
     rep(i,0,m)
     {
@@ -186,12 +188,14 @@ int main(){
             s[i].get1_data();
             break;
         }
+        else
+        cout<<nl<<"Not Found."<<nl;
     }
-    cout<<"Not Found."<<nl;
+    
     }
      else if (q==7) {
     string f;
-    cout<<"Enter Teacher Name : ";
+    cout<<nl<<"Enter Teacher Name : ";
     cin>>f;
     rep(i,0,n)
     {
@@ -199,13 +203,15 @@ int main(){
             t[i].get();
             break;
         }
+        else
+        cout<<nl<<"Not Found."<<nl;
     }
-    cout<<"Not Found."<<nl;
+    
     }
     else if(q==8)
     {
     string f;
-    cout<<"Enter Teacher Department : ";
+    cout<<nl<<"Enter Teacher Department : ";
     cin>>f;
     rep(i,0,n)
     {
@@ -213,15 +219,17 @@ int main(){
             t[i].get();
             break;
         }
+        else
+        cout<<nl<<"Not Found."<<nl;
     }
-    cout<<"Not Found."<<nl;
+    
 
   }
   else if(q==9)
   {
-       {
+    
     string f;
-    cout<<"Enter Teacher Name : ";
+    cout<<nl<<"Enter Teacher Name : ";
     cin>>f;
     rep(i,0,n)
     {
@@ -229,9 +237,11 @@ int main(){
             s[i].get1_data();
             break;
         }
+        else
+        cout<<nl<<"Not Found."<<nl;
     }
-    cout<<"Not Found."<<nl;
-    }
+    
+    
   }
 
 
@@ -243,4 +253,3 @@ int main(){
   }
   return 0;
  }
-
